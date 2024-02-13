@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">BeautyHub</string>
+    <string name="title">Welcome to \nThe Beauty Hub!</string>
+    <string name="text">Follow the steps to schedule your next appointment with us.</string>
+    <string name="chooseService">Please choose a service</string>
+    <string name="serviceName1">Nail</string>
+    <string name="serviceName2">Eyebrows</string>
+    <string name="serviceName3">Massage</string>
+    <string name="serviceName4">Hair</string>
+    <string name="startBtn">Start</string>
+    <string name="skipBtn">Skip</string>
+    <string name="loginBtn">Login</string>
+    <string name="customerSignup_Btn">Customer SignUp</string>
+
+    <string name="ProfessionalSignup_Btn">Professional SignUp</string>
+
+
+    <string name="service1_desc">Basic Manicure \n$30</string>
+    <string name="service2_desc">Basic Pedicure \n$35</string>
+    <string name="service3_desc">Gel Manicure \n$50</string>
+    <string name="service4_desc">Gel Pedicure \n$55</string>
+    <string name="service5_desc">Acrylic Extensions \n$100</string>
+
+    <string name="screen3_subheading">Now, choose one \nthat fit your needs:</string>
+    <string name="clickme">clickMe</string>
+
+    <string name="profName1">Sarah James \nNail designer</string>
+    <string name="profName2">Jordan Mcmiller \nNail designer</string>
+    <string name="profName3">Paty Sinclaire \nNail designer</string>
+
+
+
+</resources>

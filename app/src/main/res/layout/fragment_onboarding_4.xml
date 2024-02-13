@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <TextView
+        android:id="@+id/subheadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/materialToolbar"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/screen3_subheading"
+        android:textAppearance="@style/text"/>
+
+    <LinearLayout
+        android:id="@+id/professionalsList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheadingTextView"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+
+        <LinearLayout
+            android:id="@+id/profRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/profImg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/prof1"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/profName1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service1_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ratingView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="3.9"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/star" />
+        </LinearLayout>
+
+        <!-- Row 2 -->
+
+        <LinearLayout
+            android:id="@+id/profRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/profImg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/prof2"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/profName2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ratingView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="5.0"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/star" />
+        </LinearLayout>
+
+        <!-- Row 3 -->
+
+        <LinearLayout
+            android:id="@+id/profRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/profImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/prof3"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/profName3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ratingView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="4.9"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/star" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

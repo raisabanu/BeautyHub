@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <RelativeLayout
+        android:id="@+id/state"
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="165.95dp" />
+
+    <View
+        android:layout_width="100dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-74dp"
+        android:background="@drawable/dotlines" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="271dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/state"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:gravity="center_horizontal|top"
+        android:text="@string/chooseService"
+        android:textAppearance="@style/text"
+        android:textColor="#757575"
+        tools:ignore="TextSizeCheck" />
+
+    <RelativeLayout
+        android:id="@+id/actions"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp" />
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actions"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/circular_se_1"
+                android:layout_width="132dp"
+                android:layout_height="156dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/nail"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/service_name_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceName1"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/circular_se_2"
+                android:layout_width="132dp"
+                android:layout_height="156dp"
+                android:background="@drawable/eyebrows"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/service_name_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceName2"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_row"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/circular_se_3"
+                android:layout_width="132dp"
+                android:layout_height="156dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/massage"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/service_name_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceName3"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <ImageView
+                android:id="@+id/circular_se_4"
+                android:layout_width="132dp"
+                android:layout_height="156dp"
+                android:background="@drawable/hair"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/service_name_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/serviceName4"
+                android:gravity="center_horizontal"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

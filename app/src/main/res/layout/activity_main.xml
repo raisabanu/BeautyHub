@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <RelativeLayout
+        android:id="@+id/status1_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/young_woman_background"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/young_woman"
+            android:layout_width="436dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/young_woman"
+            tools:ignore="ContentDescription" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAppearance="@style/title"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/title_txtBelow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textAppearance="@style/text"
+        android:textColor="@color/black"
+        android:textSize="19sp" />
+
+    <RelativeLayout
+        android:id="@+id/actions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loginBtn"
+            android:layout_marginStart="16dp" />
+
+        <Button
+            android:id="@+id/custSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/customerSignup_Btn"
+            android:layout_marginStart="16dp" />
+        <Button
+            android:id="@+id/professionalSingup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ProfessionalSignup_Btn"
+            android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

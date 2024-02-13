@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <!-- Material Toolbar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/materialToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:title="@string/app_name"
+        app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    <TextView
+        android:id="@+id/subheadingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/materialToolbar"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/screen3_subheading"
+        android:textAppearance="@style/text"/>
+
+    <LinearLayout
+        android:id="@+id/servicesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subheadingTextView"
+        android:orientation="vertical">
+
+        <!-- Row 1 -->
+
+        <LinearLayout
+            android:id="@+id/serviceRow1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/serviceImg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/manicure"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/serviceDesc1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service1_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pickServiceLink1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/clickme"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <!-- Row 2 -->
+
+        <LinearLayout
+            android:id="@+id/serviceRow2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/serviceImg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/pedicure"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/serviceDesc2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/picServiceLink2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/clickme"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <!-- Row 3 -->
+
+        <LinearLayout
+            android:id="@+id/serviceRow3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/serviceImage2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/gel_pedicure"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/serviceDesc3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pickServiceLink3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/clickme"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <!-- Row 4 -->
+
+        <LinearLayout
+            android:id="@+id/serviceRow4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/serviceImg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/gel_manicure"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/serviceDesc4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ServiceLink4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/clickme"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <!-- Row 5 -->
+
+        <LinearLayout
+            android:id="@+id/serviceRow5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical">
+
+            <!-- Image -->
+            <ImageView
+                android:id="@+id/serviceImg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/gel_manicure"
+                android:importantForAccessibility="no" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/serviceDesc5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/service2_desc"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ServiceLink5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/clickme"
+                android:padding="16dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:drawableEndCompat="@drawable/right_arrow"  />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
